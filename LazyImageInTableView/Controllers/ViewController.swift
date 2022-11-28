@@ -31,13 +31,27 @@ class ViewController: UIViewController {
         NetworkingService.shared.fetchData { list in
             self.restaurantList = list
         }
-        
+        /*
         var menu = Menu()
         var entre = Entre()
         menu.entre = entre
         entre.menu = menu
+        */
+        
+//        do {
+//            let b = B()
+//            let a = A(propB: b)
+//            b.propA = a
+//        }
         
         
+        
+    }
+    
+    
+    @IBAction func presentView(_ sender:UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "second")
+        self.present(vc!, animated: true)
     }
 
 

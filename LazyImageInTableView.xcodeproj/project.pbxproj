@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		09B86CB4293481F200A1957F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B86CB3293481F200A1957F /* Menu.swift */; };
 		09B86CB6293482AD00A1957F /* Entre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B86CB5293482AD00A1957F /* Entre.swift */; };
+		09B86CB82935652D00A1957F /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B86CB72935652D00A1957F /* A.swift */; };
+		09B86CBA2935655B00A1957F /* B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B86CB92935655B00A1957F /* B.swift */; };
+		09B86CBC29356FF700A1957F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B86CBB29356FF700A1957F /* SecondViewController.swift */; };
 		09FFEDEE2927F320002B0D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FFEDED2927F320002B0D1B /* AppDelegate.swift */; };
 		09FFEDF02927F320002B0D1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FFEDEF2927F320002B0D1B /* SceneDelegate.swift */; };
 		09FFEDF22927F320002B0D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FFEDF12927F320002B0D1B /* ViewController.swift */; };
@@ -26,6 +29,9 @@
 /* Begin PBXFileReference section */
 		09B86CB3293481F200A1957F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		09B86CB5293482AD00A1957F /* Entre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entre.swift; sourceTree = "<group>"; };
+		09B86CB72935652D00A1957F /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
+		09B86CB92935655B00A1957F /* B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B.swift; sourceTree = "<group>"; };
+		09B86CBB29356FF700A1957F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		09FFEDEA2927F320002B0D1B /* LazyImageInTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyImageInTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FFEDED2927F320002B0D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09FFEDEF2927F320002B0D1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				09FFEDF12927F320002B0D1B /* ViewController.swift */,
+				09B86CBB29356FF700A1957F /* SecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -109,6 +116,8 @@
 				09FFEE102928478E002B0D1B /* RestaurantList.swift */,
 				09B86CB3293481F200A1957F /* Menu.swift */,
 				09B86CB5293482AD00A1957F /* Entre.swift */,
+				09B86CB72935652D00A1957F /* A.swift */,
+				09B86CB92935655B00A1957F /* B.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				09FFEE082927F5CF002B0D1B /* NetworkingService.swift in Sources */,
+				09B86CBA2935655B00A1957F /* B.swift in Sources */,
 				09FFEE162928595D002B0D1B /* CustomImageView.swift in Sources */,
 				09FFEE112928478E002B0D1B /* RestaurantList.swift in Sources */,
+				09B86CBC29356FF700A1957F /* SecondViewController.swift in Sources */,
+				09B86CB82935652D00A1957F /* A.swift in Sources */,
 				09FFEE0B29280480002B0D1B /* JSonParser.swift in Sources */,
 				09B86CB4293481F200A1957F /* Menu.swift in Sources */,
 				09FFEDF22927F320002B0D1B /* ViewController.swift in Sources */,

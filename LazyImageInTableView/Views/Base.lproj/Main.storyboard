@@ -82,12 +82,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luk-E9-bDl">
+                                <rect key="frame" x="283" y="109" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="80e-QB-IST"/>
+                                    <constraint firstAttribute="width" constant="100" id="kNg-Ei-z5n"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="present"/>
+                                <connections>
+                                    <action selector="presentView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNu-gu-hYy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OYJ-Gt-TCZ" secondAttribute="trailing" id="2BV-qZ-q3t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="luk-E9-bDl" secondAttribute="trailing" constant="10" id="HpO-26-a9S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OYJ-Gt-TCZ" secondAttribute="bottom" id="UxY-lM-DdE"/>
+                            <constraint firstItem="luk-E9-bDl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="XPn-XA-vjv"/>
                             <constraint firstItem="wK1-c2-2wd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yrg-Cq-FPa"/>
                             <constraint firstItem="OYJ-Gt-TCZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="al2-dX-vld"/>
                             <constraint firstItem="OYJ-Gt-TCZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="uLf-2z-xLd"/>
@@ -102,6 +116,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.946564885496173" y="-28.169014084507044"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="XS4-hM-rh0">
+            <objects>
+                <viewController storyboardIdentifier="second" id="tov-ax-xxa" customClass="SecondViewController" customModule="LazyImageInTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J3e-sf-hyx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaA-pF-Yyi">
+                                <rect key="frame" x="154.66666666666666" y="408.66666666666669" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dismiss"/>
+                                <connections>
+                                    <action selector="btnDismiss:" destination="tov-ax-xxa" eventType="touchUpInside" id="92M-Sf-WSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ovv-4y-1hu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NaA-pF-Yyi" firstAttribute="centerY" secondItem="J3e-sf-hyx" secondAttribute="centerY" id="7da-hU-ptP"/>
+                            <constraint firstItem="NaA-pF-Yyi" firstAttribute="centerX" secondItem="J3e-sf-hyx" secondAttribute="centerX" id="bWC-2L-n2m"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvr-kJ-vEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="-27"/>
         </scene>
     </scenes>
     <resources>
