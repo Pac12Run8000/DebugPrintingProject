@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                
+                
+                
             }
         }
     }
@@ -40,6 +43,8 @@ extension ViewController:UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = restaurantList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CustomCell
+//        print(item)
+//        debugPrint(item)
         cell?.restaurant = item
         return cell!
     }

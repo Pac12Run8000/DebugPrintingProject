@@ -19,3 +19,23 @@ struct Restaurant: Codable {
 }
 
 typealias RestaurantList = [Restaurant]
+/*
+extension Restaurant:CustomStringConvertible, CustomDebugStringConvertible {
+    var debugDescription: String {
+        var myDescription = "[name:\(name)] "
+        let mirror = Mirror(reflecting: self)
+        myDescription += mirror.children.compactMap { (args) -> String? in
+            let (label, value) = args
+            guard let propertyName = label else {return nil}
+            return "name:\(propertyName), value: \(value)"
+        }.joined(separator: ", ")
+        return myDescription
+    }
+    
+    var description: String {
+        return "name: \(name)"
+    }
+    
+    
+}
+*/
