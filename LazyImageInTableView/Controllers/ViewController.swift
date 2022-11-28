@@ -32,6 +32,11 @@ class ViewController: UIViewController {
             self.restaurantList = list
         }
         
+        var menu = Menu()
+        var entre = Entre()
+        menu.entre = entre
+        entre.menu = menu
+        
         
     }
 
